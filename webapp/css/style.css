@@ -1,0 +1,71 @@
+/* header */
+#__page0-intHeader-BarPH {
+    background-color: #056696;
+}
+#__page0-title-inner {
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: -1.9px;
+} 
+/*accorfion panel*/
+.sapMPanelWrappingDiv {
+    text-align: center;
+}
+#__xmlview0--panel1-CollapsedImg {
+    background: lightgray;
+}
+
+#__xmlview0--panel1-CollapsedImg::before {
+	display:none;
+}
+
+#__xmlview0--panel1-CollapsedImg::after {
+	 content: '\e1e3';
+    vertical-align: middle;
+    color: white;
+}
+#__xmlview1 {
+    position: relative;
+}
+
+.sapMPanelWrappingDiv.sapMPanelWrappingDivExpanded {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+.sapMPanelExpandableIconExpanded {
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* search field */
+#__xmlview0--__fieldSearch {
+    float: right;
+}
+.sapMSFB {
+    transform: scale(-1, 1);
+    color: gray;
+    left: 10%;
+}
+.sapMSFB::after {
+    color: gray;
+}
+.sapMSFF{
+	outline:none;
+	border:none;
+	border-bottom: solid 1px gray;
+	background: transparent;
+	padding-right: 0;
+	padding-right: 0.625rem;
+}
+#__xmlview0--__fieldSearch-search {
+    left: 0;
+}
+#__xmlview0--__fieldSearch-I {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    right:0;
+}
+#__xmlview0--__fieldSearch-F::before{
+	display:none;
+}

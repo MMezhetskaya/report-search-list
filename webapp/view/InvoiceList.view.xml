@@ -1,0 +1,37 @@
+<mvc:View
+	controllerName="report.controller.InvoiceList"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+   <List
+		id="invoiceList"
+      headerText="{i18n>invoiceListTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto"
+      items="{invoice>/Invoices}" >
+   	<headerToolbar>
+         <Toolbar>
+            <Title text="{i18n>invoiceListTitle}"/>
+            <ToolbarSpacer/>
+            <!--SearchField width="50%" search="onFilterInvoices"/-->
+            <!--Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel1" height="200px">
+			            <content-->
+			                <SearchField width="250px" placeholder="SearchField" id="__fieldSearch" showRefreshButton="false" search="onFilterInvoices"/>
+						<!--/content>
+			</Panel-->
+         </Toolbar>
+      </headerToolbar>
+      
+      <items>
+         <ObjectListItem
+            title="{invoice>Quantity} x {invoice>ProductName}"
+            number="{
+			parts: [{path: 'invoice>ExtendedPrice'}, {path: 'view>/currency'}],
+			type: 'sap.ui.model.type.Currency',
+			formatOptions: {
+				showMeasure: false
+			}
+		}"
+		numberUnit="{view>/currency}"/>
+      </items>
+   </List>
+</mvc:View>

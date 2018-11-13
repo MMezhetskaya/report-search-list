@@ -1,0 +1,7 @@
+<mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Panel expandable="true" expanded="true" width="auto" class="sapUiResponsiveMargin" height="69%">
+		<content>
+			<SearchField xmlns="sap.m" width="40%" placeholder="SearchField" id="__fieldSearch" showRefreshButton="true" value="SearchField"/>
+		</content>
+	</Panel>
+</mvc:View>
